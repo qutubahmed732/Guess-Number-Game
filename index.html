@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Geuss Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="first-section">
+        <button class="again-button" onclick="againButtonHandler()">Again</button>
+        <h4 class="h4">Between 1 and 20</h4>
+    </div>
+    <h1>Guess My Number</h1>
+
+    <div class="line"></div>
+    <div class="questionMark">
+        <img src="Black_question_mark.png" alt="" class="image">
+    </div>
+    </div>
+
+    <div id="second-section">
+        <div class="left">
+            <input type="number" class="input">
+            <button class="check" onclick="checkHandler()">check</button>
+        </div>
+        <div class="right">
+            <p class="message">Start Guessing...</p>
+            <p>Score: <span class="score">20</span></p>
+            <p>High Score: <span class="highScore">0</span></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
